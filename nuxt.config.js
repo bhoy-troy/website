@@ -38,6 +38,13 @@ export default {
    */
   plugins: [],
   /*
+  ** Nuxt.js server
+  */
+  server: {
+    port: process.env.YOUR_PORT || process.env.PORT || 3000, // default: 3000
+    host: process.env.YOUR_HOST || '0.0.0.0' // default: localhost
+  },
+  /*
    ** Nuxt.js modules
    */
   modules: [],
