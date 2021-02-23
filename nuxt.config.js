@@ -47,10 +47,23 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: [
+    "@nuxt/http",
+    "@nuxtjs/sentry",
+
+  ],
   /*
    ** Build configuration
    */
+
+
+  sentry:{
+    disabled: false,
+    initialize: true,
+    dsn: process.env.SENTRY_DSN || "",
+
+    config: {environment: process.env.SENTRY_ENVIRONMENT}
+  },
   build: {
     /*
      ** You can extend webpack config here
