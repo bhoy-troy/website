@@ -4,6 +4,7 @@
   "description": "Personal Website",
   "author": "James Troy",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -27,5 +28,8 @@
     "favicons-webpack-plugin": "5.0.1",
     "node-sass": "^5.0.0",
     "vee-validate": "4.1.19"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }

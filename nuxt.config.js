@@ -7,7 +7,8 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
 export default {
 
   ...routerBase,
-  mode: 'spa',
+  // Disable Server Side rendering
+  ssr: false,
   /*
    ** Headers of the page
    */
